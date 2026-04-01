@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Виктория Музыченко | AI Решатель</title>
+    <title>Виктория Музыченко & Команда | Управленческий учет</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <script>
@@ -12,9 +12,9 @@
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
-                        dark: '#07090D', // Еще более глубокий премиальный черный
+                        dark: '#07090D',
                         card: '#11161D',
-                        accent: '#D4AF37', // Золото
+                        accent: '#D4AF37',
                         success: '#22C55E',
                         danger: '#EF4444',
                         textmain: '#F3F4F6',
@@ -26,16 +26,12 @@
     </script>
     <style>
         body { background-color: #07090D; color: #F3F4F6; overflow-x: hidden; }
-        
-        /* Премиальный градиентный текст */
         .text-gradient {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(90deg, #D4AF37, #F8E192);
         }
-
-        /* Эффект матового стекла для карточек */
         .glass-card {
             background: rgba(17, 22, 29, 0.6);
             backdrop-filter: blur(12px);
@@ -48,8 +44,6 @@
             transform: translateY(-5px);
             border-color: rgba(212, 175, 55, 0.3);
         }
-
-        /* Анимация появления при скролле (Динамика) */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -63,75 +57,69 @@
 </head>
 <body class="font-sans antialiased pb-10 selection:bg-accent selection:text-dark">
 
-    <!-- Декоративные фоновые свечения -->
     <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
         <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-accent opacity-[0.03] blur-[100px] rounded-full"></div>
-        <div class="absolute bottom-[20%] right-[-10%] w-96 h-96 bg-blue-500 opacity-[0.03] blur-[100px] rounded-full"></div>
     </div>
 
     <!-- Первый экран -->
     <header class="px-6 pt-16 pb-12 flex flex-col items-center text-center reveal active">
-        <!-- Блок с фото -->
         <div class="relative mb-6">
             <div class="absolute inset-0 bg-accent/20 blur-[50px] rounded-full z-0 animate-pulse" style="animation-duration: 4s;"></div>
             <img src="photo.jpg" alt="Виктория Музыченко" class="relative z-10 w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border border-gray-700 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
         </div>
         
         <h2 class="text-xl font-semibold mb-1">Виктория Музыченко</h2>
-        <p class="text-sm text-textmuted mb-8 uppercase tracking-widest font-medium">Управляющий партнёр</p>
+        <p class="text-sm text-textmuted mb-8 uppercase tracking-widest font-medium">Управляющий партнёр & Команда</p>
         
         <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-            Вы видите отчёты. <br><span class="text-gradient">Мы показываем реальную прибыль</span>
+            Управленческий учет, <br><span class="text-gradient">который сам находит потери</span>
         </h1>
-        <p class="text-lg text-textmuted mb-4 max-w-xl mx-auto leading-relaxed">
-            Единая SaaS-экосистема для производства и опта. Убираем потери денег в продажах, складе и дебиторке
+        <p class="text-lg text-textmuted mb-4 max-w-2xl mx-auto leading-relaxed">
+            Готовая SaaS-платформа для оптовых продаж и производства. Убираем потери денег в продажах, складе и дебиторке. Вы видите реальную прибыль, а не таблицы в Excel
         </p>
     </header>
 
-    <!-- Отрасли (Новый интерактивный блок) -->
-    <section class="px-6 py-10 reveal">
-        <h3 class="text-sm uppercase tracking-widest text-textmuted text-center mb-6">Адаптируем под вашу нишу</h3>
+    <!-- Отрасли -->
+    <section class="px-6 py-8 reveal">
         <div class="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
-            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm hover:border-accent/50 hover:text-accent cursor-default transition duration-300">🥗 FoodTech</span>
-            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm hover:border-accent/50 hover:text-accent cursor-default transition duration-300">🛋 Производство мебели</span>
-            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm hover:border-accent/50 hover:text-accent cursor-default transition duration-300">🏗 Стройка и подрядчики</span>
-            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm hover:border-accent/50 hover:text-accent cursor-default transition duration-300">📦 Оптовая дистрибьюция</span>
-            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm hover:border-accent/50 hover:text-accent cursor-default transition duration-300">🚜 Агрокомплексы</span>
-            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm hover:border-accent/50 hover:text-accent cursor-default transition duration-300">🧵 Легкая промышленность</span>
+            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm cursor-default">Оптовые дистрибьюторы</span>
+            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm cursor-default">Пищевые производства</span>
+            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm cursor-default">Мебельные фабрики</span>
+            <span class="px-4 py-2 rounded-full border border-gray-800 bg-gray-900/50 text-sm cursor-default">Поставщики стройматериалов</span>
         </div>
     </section>
 
-    <!-- Архитектура (Glassmorphism Карточки) -->
+    <!-- Архитектура (Роли) -->
     <section class="px-6 py-12 reveal">
-        <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-gradient">Ролевая экосистема</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-gradient">Архитектура платформы</h2>
         
         <div class="space-y-4 max-w-3xl mx-auto">
             <div class="glass-card p-6 rounded-2xl relative overflow-hidden group">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-accent opacity-5 rounded-full -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-500"></div>
                 <div class="text-3xl mb-3 relative z-10">📊</div>
                 <h3 class="text-lg font-bold mb-2 text-white relative z-10">Дашборд Руководителя</h3>
-                <p class="text-sm text-textmuted relative z-10">Сводка по выручке, маржинальности и дебиторской задолженности в реальном времени. Взгляд на бизнес сверху</p>
+                <p class="text-sm text-textmuted relative z-10">Рейтинг менеджеров, контроль собираемости оплат, аналитика выручки по группам товаров и отслеживание кассовых разрывов</p>
             </div>
             
             <div class="glass-card p-6 rounded-2xl relative overflow-hidden group">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500 opacity-5 rounded-full -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-500"></div>
                 <div class="text-3xl mb-3 relative z-10">💼</div>
                 <h3 class="text-lg font-bold mb-2 text-white relative z-10">Кабинеты Менеджеров</h3>
-                <p class="text-sm text-textmuted relative z-10">Индивидуальные планы продаж, автоматический расчет KPI и зарплат, контроль отгрузок без рутины в Excel</p>
+                <p class="text-sm text-textmuted relative z-10">Персональные планы продаж, база контрагентов и автоматический расчет мотивации (оклады, % за план, бонусы за новых клиентов)</p>
             </div>
 
             <div class="glass-card p-6 rounded-2xl relative overflow-hidden group">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-green-500 opacity-5 rounded-full -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-500"></div>
                 <div class="text-3xl mb-3 relative z-10">🤝</div>
-                <h3 class="text-lg font-bold mb-2 text-white relative z-10">Кабинеты B2B-Клиентов</h3>
-                <p class="text-sm text-textmuted relative z-10">Прозрачный статус заказов, самостоятельные заявки и автоматическая система бонусов за объем (геймификация)</p>
+                <h3 class="text-lg font-bold mb-2 text-white relative z-10">Кабинеты Клиентов B2B</h3>
+                <p class="text-sm text-textmuted relative z-10">Единая ссылка для контрагентов и прозрачная лестница бонусов (статусы Бронза, Серебро, Золото) в зависимости от объемов закупки</p>
             </div>
         </div>
     </section>
 
     <!-- Ключевые возможности -->
     <section class="px-6 py-12 border-y border-gray-800/50 reveal">
-        <h2 class="text-2xl font-bold mb-10 text-center">Умная аналитика продаж</h2>
+        <h2 class="text-2xl font-bold mb-10 text-center">Контроль на основе данных</h2>
         
         <div class="space-y-6 max-w-3xl mx-auto">
             <div class="p-1">
@@ -139,11 +127,7 @@
                     <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span> 
                     Триггеры и Сигналы
                 </h4>
-                <p class="text-sm text-textmuted mb-4 pl-4 border-l border-gray-800">Система сама находит аномалии и предупреждает вас до того, как бизнес понесет убытки</p>
-                <div class="bg-gray-900/50 p-4 rounded-xl border border-gray-800/50 text-sm ml-4 shadow-inner">
-                    <div class="flex justify-between mb-2"><span>Спящие клиенты (>60 дн)</span> <span class="text-accent font-bold">32</span></div>
-                    <div class="flex justify-between"><span>Снижение ср. чека</span> <span class="text-danger font-bold">-76%</span></div>
-                </div>
+                <p class="text-sm text-textmuted mb-4 pl-4 border-l border-gray-800">Автоматический мониторинг базы контрагентов. Вывод списков спящих клиентов (без отгрузок более 60 дней) и фиксация снижения среднего чека</p>
             </div>
 
             <div class="p-1 mt-6">
@@ -151,15 +135,15 @@
                     <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span> 
                     Матрица ABC × XYZ
                 </h4>
-                <p class="text-sm text-textmuted mb-4 pl-4 border-l border-gray-800">Глубокое управление ассортиментом. Показываем, что приносит прибыль, а что замораживает деньги на складе</p>
+                <p class="text-sm text-textmuted mb-4 pl-4 border-l border-gray-800">Распределение ассортимента по категориям спроса. Выявление позиций, которые приносят основную прибыль (AX), и тех, что замораживают деньги (CZ)</p>
             </div>
 
             <div class="p-1 mt-6">
                 <h4 class="text-accent font-semibold mb-2 text-lg flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span> 
-                    Контроль финансов
+                    Контроль отгрузок и ЗП
                 </h4>
-                <p class="text-sm text-textmuted mb-4 pl-4 border-l border-gray-800">Сверка отгрузок и оплат в один клик. Жесткий контроль дебиторской задолженности и кассовых разрывов</p>
+                <p class="text-sm text-textmuted mb-4 pl-4 border-l border-gray-800">Импорт данных из Excel. Автоматическая сверка выставленных счетов с фактическими оплатами, расчет долгов и формирование базы для начисления заработной платы менеджерам</p>
             </div>
         </div>
     </section>
@@ -167,8 +151,7 @@
     <!-- БЛОК КОНТАКТОВ С НОВЫМИ КНОПКАМИ -->
     <footer class="px-6 pt-16 pb-16 text-center reveal">
         <h2 class="text-2xl font-bold mb-4">Начните трансформацию бизнеса</h2>
-        <p class="text-textmuted mb-10 text-sm max-w-md mx-auto">Если бизнес “не растёт, но вроде всё работает” —
-значит система уже даёт сбой. Начните с диагностики</p>
+        <p class="text-textmuted mb-10 text-sm max-w-md mx-auto">Свяжитесь с нами для аудита ваших бизнес-процессов и демонстрации платформы на ваших данных</p>
         
         <div class="flex flex-wrap justify-center items-center gap-4 max-w-xl mx-auto">
             
@@ -194,21 +177,19 @@
         </div>
     </footer>
 
-    <!-- Скрипт для анимации появления при скролле -->
     <script>
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             for (var i = 0; i < reveals.length; i++) {
                 var windowHeight = window.innerHeight;
                 var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 100; // Порог срабатывания
+                var elementVisible = 100;
                 if (elementTop < windowHeight - elementVisible) {
                     reveals[i].classList.add("active");
                 }
             }
         }
         window.addEventListener("scroll", reveal);
-        // Запускаем один раз при загрузке, чтобы показать первый экран
         reveal();
     </script>
 
